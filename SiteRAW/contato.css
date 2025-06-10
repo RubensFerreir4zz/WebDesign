@@ -1,0 +1,68 @@
+*{
+    margin: 0em;
+    padding: 0em;
+    font-family: garamond;
+    
+}
+
+li.atual a{
+    color: gray;
+}
+
+
+body{
+    text-align: center;
+    background-color: #faf8f5;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: darkgoldenrod;
+}
+
+nav ol{
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+h2{
+    padding-bottom: 5px;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+nav li{
+    display: inline-block;
+    padding: 1em;
+}
+
+
+footer address{
+    background-color: white;
+    padding: 2em;
+}
+
+.contato-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.5em;
+}
+
+

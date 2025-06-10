@@ -1,0 +1,74 @@
+
+*{
+    margin: 0em;
+    padding: 0em;
+    font-family: garamond;
+    
+}
+
+li.atual a{
+    color: gray;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: beige;
+    max-width: 100em;
+    margin-top: 1em;
+    margin: 2em auto;
+}
+
+td, th{
+    padding: 1em;
+    border: 1px solid black;
+}
+
+tr:nth-child(odd){
+    background-color: beige;
+}
+
+body{
+    text-align: center;
+    background-color: #faf8f5;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: darkgoldenrod;
+}
+
+nav ol{
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+figure img{
+    border: 1px solid #F5BD26;
+}
+
+li{
+    display: inline-block;
+    padding: 1em;
+}
+
+
+footer address{
+    background-color: white;
+    padding: 2em;
+}
+article h2{
+    padding-bottom: 5px;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+article p{
+    text-align: center;
+    max-width:50em;
+    margin: 2em auto;
+}
