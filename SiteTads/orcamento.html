@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADS - Orçamento</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bodyorcamento">
+    <header class="headerorca">
+        <h1><a href="index.html"><img src="imagens/logotadspreta.png" alt="marca tads"></a></h1>
+        <nav class="orcamentonav">
+            <ul>
+                <li class="pr-orcamento"><a href="orcamento.html" class="atual">Orçamento</a></li>
+                <li class="pr-quemsomos"><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <article class="orcamento-box"> 
+                <h2 class="h2orca">Solicitar orçamento</h2>
+                <form action="https://formsubmit.co/contactferreira4zz@gmail.com" method="post" enctype="text/plain">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    
+                    <label for="servico">Selecione o serviço</label>
+                    <select name="servico" id="servico">
+                        <option value="site">Criação de site</option>
+                        <option value="app">Desenvolvimento de aplicativo</option>
+                        <option value="automacao">Automação de tarefas</option>
+                        <option value="projespecial">Projeto especial</option>
+                    </select>
+                    
+                    <label for="mensagem">Descreva o seu projeto</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                    <button>Solicitar orçamento</button>
+                </form>
+        </article>
+    </main>
+    <footer>
+        <p>@2025 TADS - Technology and Data Systems</p>
+    </footer>
+</body>
+</html>

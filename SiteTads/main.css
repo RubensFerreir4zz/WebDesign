@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 3em;
+}
+.vdbg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 2.5em;
+    color: white;
+}
+
+.tr-orcamento{
+    border-right: 1px solid white;
+}
+
+.tr-quemsomos{
+    border-right: 1px solid white;
+}
+
+
+nav li{
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: #0dc959;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #0dc959;
+    padding: 10px;
+}
+
+/* ORÇAMENTO */
+
+.pr-orcamento{
+    border-right: 1px solid black;
+}
+
+.pr-quemsomos{
+    border-right: 1px solid black;
+}
+
+.orcamentonav a{
+    color: black;
+}
+
+a.atual{
+    color: #0dc959;
+}
+
+.h2orca{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+.orcamento-box{
+    color: white;
+    max-width: 600px;
+    padding: 30px;
+    margin: 10em auto;
+    background-color: #0dc959;
+    border-radius: 30px;
+    box-shadow: 10px black;
+}
+
+form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 25px;
+}
+
+input, select, textarea{
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    color: white;
+    background-color: #035022;
+}
+
+.bodyorcamento{
+    background-image: url(imagens/bgorcamento.png);
+    background-size: cover;
+}
+
+
+/* QUEM SOMOS */
+
+.priparte{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    max-height: 400px;
+    margin: 10em auto ;
+}
+
+.priparte h2{
+    color: #0dc959;
+    font-size: 40px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.priparte p{
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.priparte img{
+    border-radius: 10px;
+}
+
+.segparte{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-width: 1000px;
+    max-height: 400px;
+    margin: 10em auto ;
+    background-color: #0dc959;
+    border-radius: 30px;
+}
+
+.segparte h2{
+    color: white;
+    font-size: 40px;
+    text-align: justify;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+
+.segparte li{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.segparte img{
+    width: 100%;
+    height: 100%;
+    align-content: end;
+    border-radius: 30px;
+}
+
+.textosegparte{
+    margin-right: 30px;
+}
+
+.bodyquemsomos{
+    background-image: url(imagens/bgquemsomos.png);
+    background-size: cover;
+}
+
+/* CONTATOS */
+
+.contatos{
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    max-height: 400px;
+    margin: 10em auto ;
+    background-color: #0dc959;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.contatos h2{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.contato-box{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.footercontato{
+    text-align: center;
+    color: white;
+    background-color: #0dc959;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.margin-contato-box-h2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4em;
+}
+
+.conteudo{
+    flex: 1;
+}
+
+.bodycontato{
+    background-image: url(imagens/bgcontato.png);
+    background-size: cover;
+}
