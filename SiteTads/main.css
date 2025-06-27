@@ -40,11 +40,11 @@ nav ul{
     color: white;
 }
 
-.tr-orcamento{
+.br-orcamento{
     border-right: 1px solid white;
 }
 
-.tr-quemsomos{
+.br-quemsomos{
     border-right: 1px solid white;
 }
 
@@ -106,7 +106,6 @@ a.atual{
     margin: 10em auto;
     background-color: #0dc959;
     border-radius: 30px;
-    box-shadow: 10px black;
 }
 
 form{
@@ -117,6 +116,7 @@ form{
 
 label{
     font-size: 25px;
+    padding-bottom: 5px;
 }
 
 input, select, textarea{
@@ -124,6 +124,15 @@ input, select, textarea{
     padding: 10px;
     border-radius: 5px;
     border: none;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: 2px solid #035022;
+}
+
+
+textarea{
+    resize: none;
 }
 
 button{
@@ -151,7 +160,6 @@ button:hover{
     display: flex;
     align-items: center;
     max-width: 1000px;
-    max-height: 400px;
     margin: 10em auto ;
 }
 
@@ -223,6 +231,7 @@ button:hover{
     align-items: center;
     max-width: 1000px;
     max-height: 400px;
+    padding: 2em;
     margin: 10em auto ;
     background-color: #0dc959;
     border-radius: 30px;
@@ -251,12 +260,6 @@ button:hover{
     padding-top: 20px;
 }
 
-.footercontato{
-    text-align: center;
-    color: white;
-    background-color: #0dc959;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -278,4 +281,17 @@ body {
 .bodycontato{
     background-image: url(imagens/bgcontato.png);
     background-size: cover;
+}
+
+/* ENVIAR */
+
+.msgenviado{
+    text-align: center;
+    max-width: 1000px;
+    max-height: 400px;
+    padding: 2em;
+    margin: 14.5em auto ;
+    background-color: #0dc959;
+    border-radius: 30px;
+    color: white;
 }
