@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    color: white;
+    padding: 1rem;
+    background-image: linear-gradient(to left,#7292A6, #224459 );
+}
+
+
+main{
+    display: grid;
+    margin: 2rem auto;
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b e e h"
+    "a c f g i"
+    "a d f j j"
+    ;
+
+}
+
+section{
+    background-color: #DEDEDE;
+    padding: 1rem;
+}
+
+nav.menuprincipal{
+    grid-area: a;
+}
+
+section.cardtexto1{
+    grid-area: b;
+}
+
+section.listacontent{
+    grid-area: c;
+}
+
+section.palestrante1{
+    grid-area: d;
+}
+section.programacao{
+    grid-area: e;
+}
+
+section.form{
+    grid-area: f;
+}
+
+section.palestrante2{
+    grid-area: g;
+}
+
+section.palestrante3{
+    grid-area: h;
+}
+
+section.palestrante4{
+    grid-area: i;
+}
+
+section.organizacao{
+    grid-area: j;
+}
+
+
+table{
+    margin-top:1rem;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid #f3f3f3;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color:#abc2cd;
+}
+
+nav ol{
+    font-size: 40px;
+    list-style-type: none;
+}
+
+nav li{
+    margin-top: 1.5rem;
+}
+
+nav a{
+    color: #314753;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #4a81a3;
+    text-decoration: none;
+}
+
+
+ul{
+    list-style-position: outside;
+    padding: 1rem;
+}
+
+
+span{
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+    border:1px solid #f3f3f3;
+    transition: 0.3s;
+}
+
+span a{
+    text-decoration: none;
+    color: #224459;
+    transition: 0.3s;
+}
+
+span a:hover{
+    color: white;
+}
+span:hover{
+    color: white;
+    background-color: #4a81a3;
+}
+
+ul.organizacao{
+    padding-top: 0;
+}
+
+form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 1rem;
+}
+input[type="text"]{
+    padding: 0.5rem;
+}
+
+input[type="email"]{
+    padding: 0.5rem;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #224459;
+    transition: 0.3s;
+}
+input[type="submit"]:hover{
+    color: white;
+    background-color: #4a81a3;
+}
+.palestrante1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    background-image: url(palestrantes/ellen.jpg);
+}
+.palestrante1 h2{
+    font-weight: normal;
+    color:white;
+    padding: 1rem;
+    flex-basis: 100%;
+    background-color: rgba(0, 0, 0, 0.197);
+}
+
+
+.palestrante2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    background-image: url(palestrantes/georgia.jpg);
+}
+.palestrante2 h2{
+    font-weight: normal;
+    color:white;
+    padding: 1rem;
+    flex-basis: 100%;
+    background-color: rgba(0, 0, 0, 0.197);
+}
+
+.palestrante3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    background-image: url(palestrantes/henrique.jpg);
+}
+.palestrante3 h2{
+    font-weight: normal;
+    color:white;
+    padding: 1rem;
+    flex-basis: 100%;
+    background-color: rgba(0, 0, 0, 0.197);
+}
+
+.palestrante4{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    background-image: url(palestrantes/amanda.jpg);
+}
+.palestrante4 h2{
+    font-weight: normal;
+    color:white;
+    padding: 1rem;
+    flex-basis: 100%;
+    background-color: rgba(0, 0, 0, 0.197);
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #224459;
+    padding: 2rem;
+}
