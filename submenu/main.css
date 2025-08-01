@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Sans-serif;
+}
+main{
+    background-image: url(img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+main h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10rem;
+}
+
+header{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #041c2c;
+}
+
+header img{
+    width: 20%;
+}
+
+nav{
+    padding: 0.5rem;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+
+    list-style-type: none;
+    font-size: 1.5rem;
+    
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+nav li a:hover{
+    color: #F1881D;
+}
+
+.submenu{
+    position: relative;
+    margin-right: 2rem;
+}
+
+.submenu:hover > a {
+    color: #F1881D;
+}
+
+.submenu-content{
+    background-color: white;
+    gap: 0;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    visibility: hidden;
+    opacity: 0; 
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out, visibility 0.6s ease-in-out;
+}
+
+
+.submenu-content li a{
+    display: block;
+    font-size: 20px;
+    padding: 1rem;
+    color: black;
+    transition: 0.3s;
+}
+.submenu-content li a:hover{
+    color: white;
+    background-color: #041c2c;
+}
+
+
+.submenu:hover .submenu-content{
+    display: block;
+    visibility: visible;
+    opacity: 1; 
+    transform: translateY(0)
+}
