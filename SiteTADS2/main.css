@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.bg_header{
+    background-color: #1c1c1c;
+}
+
+
+header ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    text-decoration: none;
+    color: #68b54e;
+    font-size: 1.5rem;
+}
+
+.barra{
+    border-right: 1px solid white;
+    padding-right: 1rem;
+}
+
+
+
+
+/* PÁGINA PRINCIPAL*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.texto_principal{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 8rem;
+
+}
+
+.container-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    z-index: -1; 
+}
+
+#video-background {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    object-fit: cover;
+}
+
+/* QUEM SOMOS */
+
+.pg_atual{
+    color: #68b54e;
+}
+
+.quemsomos section{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 100rem;
+}
+
+.quemsomos section div h2{
+    color: #68b54e;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.quemsomos section div p{
+    text-align: justify;
+    font-size: 1.7rem;
+}
+
+.quemsomos section figure img{
+    border-radius:2rem;
+}
+
+.quemsomos{
+    background-image: url(img/bgquemsomos.png);
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quemsomos main{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+
+/* CLIENTES */
+
+.clientes{
+    background-image: url(img/bgquemsomos.png);
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clientes main{
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.clientes main h2{
+    font-size: 4rem;
+    color: #68b54e;
+}
+
+.clientes main section {
+    width: 70rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: transform 0.3s ease-in-out, 0.3s;
+}
+
+
+.clientes main section:hover{
+    transform: scale(1.05);
+    color: #68b54e;
+}
+
+
+.clientes main section img{
+    border-radius: 0rem;
+}
+
+
+.clientes main p{
+    text-align: justify;
+    font-size: 1.7rem ;
+}
+
+/* SERVIÇOS */
+
+
+.servicos  main{
+    display: flex;
+    gap: 2rem;
+}
+
+.servicos main section{
+    width: 380px;
+    height: 540px;
+
+    background-color: #1c1c1c;
+
+    border-radius: 2rem;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.servicos main  section:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.servicos main section img{
+    border-radius: 2rem;
+}
+
+
+.servicos main section div{
+    padding: 2rem;
+}
+
+.servicos main section h2{
+    color: #68b54e;
+}
+
+.servicos main section p{
+    margin-top: 1rem;
+    color: white;
+}
+
+/* ORÇAMENTO */
+
+.orcamento{
+    background-image: url(img/bgquemsomos.png);
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.orcamento main article{
+    display: flex;
+    align-items: center;
+    width: 930px;
+    background-color: #1c1c1c;
+    border-radius: 2rem;
+}
+
+.orcamento main article img{
+    border-radius: 2rem;
+}
+
+.orcamento main article div h2{
+    color: #68b54e;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.orcamento main article div{
+    margin: 0 auto;
+    flex-basis: 40%;
+}
+
+.orcamento main article div form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.orcamento main article div form input, select, textarea, button{
+    border: none;
+    padding: 0.7rem;
+    background-color: #5a5a5a;
+    color: #c0c0c0;
+    transition: 0.3s;
+}
+
+
+.orcamento main article div form button:hover{
+    color: white;
+    background-color: #68b54e;
+}
+
+
+::placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+textarea{
+    resize: none;
+}
+
+
+/* CONTATO */
+
+.contato{
+    background-image: url(img/bgquemsomos.png);
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contato main article section figure img{
+    border-radius: 2rem;
+
+}
+
+.contato main article section{
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+.contato main article section div h2{
+    font-size: 3rem;
+    color: #68b54e;
+    margin-bottom: 1rem;
+
+}
+
+.contato main article section div p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.contato main article div button{
+    padding: 1rem;
+    width: 15rem;
+    background-color: #68b54e;
+    color: white;
+}
+
+.contato main article div button:hover{
+    color: white;
+    background-color: #1c1c1c;
+}
+
+.contato .card-container{
+    display: flex;
+    margin-top: 3rem;
+    background-color: #1c1c1c;
+    border-radius: 2rem;
+    padding: 5rem;
+}
+
+.contato .card-container div{
+    color: white;
+}
+
+.contato main article{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #1c1c1c;
+    padding: 0.5rem;
+}

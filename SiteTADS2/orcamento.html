@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADS - Desenvolvendo Soluções</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="orcamento">
+    <header class="bg_header">
+        <h1><a href="index.html"><img src="img/logo_tads_branca.png" alt="Marca da empresa TADS"></a></h1>
+        <nav>
+            <ul>
+                <li class="barra"><a href="quemsomos.html">Quem Somos</a></li>
+                <li class="barra"><a href="clientes.html">Clientes</a></li>
+                <li class="barra"><a href="servicos.html">Serviços</a></li>
+                <li class="barra"><a href="orcamento.html"class="pg_atual">Orçamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <figure>
+                <img src="img/imgorca.png" alt="Imagem mulher mexendo noo computador">
+            </figure>
+            <div>
+                <h2>Faça seu orçamento</h2>
+                <form action="enviar.html">
+                        <input type="text" name="nome" id="nome" required placeholder="Nome">
+                        <input type="email" name="email" id="email" required placeholder="Email">
+                        <select name="servico" id="servico" required aria-placeholder="Selecione o serviço">
+                            <option value="site">Criação de site</option>
+                            <option value="app">Desenvolvimento de aplicativo</option>
+                            <option value="automacao">Automação de tarefas</option>
+                            <option value="projespecial">Projeto especial</option>
+                        </select>
+                        <textarea name="mensagem" id="mensagem" required placeholder="Digite sua mensagem"></textarea>
+                        <button type="submit">Solicitar orçamento</button>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por TADS</p>
+    </footer>
+</body>
+</html>
